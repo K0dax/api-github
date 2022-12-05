@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
@@ -7,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-aling: center;
+  text-align: center;
   min-height: 100vh;
   padding: 0 2rem;
 `;
@@ -39,7 +38,7 @@ export const Input = styled.input`
   margin-right: 24px;
   padding: 0 24px;
 
-  &::placeholder {
+  &::placehoder {
     color: ${(props) => props.theme.colors.metalDark};
   }
 `;
@@ -48,6 +47,7 @@ export const Button = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: transparent;
   width: 80px;
   height: 64px;
