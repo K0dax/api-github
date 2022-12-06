@@ -41,3 +41,23 @@ export const Name = styled.h2`
     display: none;
   }
 `;
+
+export const Inner = styled.div`
+  padding: 1rem;
+
+  @media only screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+    display: none;
+  }
+`;
+
+export const Data = styled.p`
+  display: flex;
+  margin-left: -15px;
+  align-items: center;
+  line-height: 1.5;
+
+  svg {
+    margin-right: 10px;
+  }
+`;
+// margin-left pra corrigir espaço bugado caso as svg's não resolvam deixarei com a mesma margin-left
