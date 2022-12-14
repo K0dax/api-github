@@ -7,6 +7,7 @@ import Filter from './Filter';
 import Repositories from './Repositories';
 
 import { Container, Sidebar, Main } from './styles';
+
 import { getLangsFrom } from '../../services/getlangs';
 
 const RepositoriesPage = () => {
@@ -23,34 +24,46 @@ const RepositoriesPage = () => {
 
   const repositories = [
     {
+      id: '1',
       name: 'Repo 1',
       desc: 'desc 1',
       html_url: 'https://koda.com',
       language: 'JavaScript',
     },
     {
+      id: '2',
       name: 'Repo 2',
       desc: 'desc 2',
       html_url: 'https://koda.com',
       language: 'PHP',
     },
     {
+      id: '3',
       name: 'Repo 3',
       desc: 'desc 3',
       html_url: 'https://koda.com',
       language: 'Ruby',
     },
     {
+      id: '4',
       name: 'Repo 4',
       desc: 'desc 4',
       html_url: 'https://koda.com',
       language: 'Python',
     },
     {
+      id: '5',
       name: 'Repo 5',
       desc: 'desc 5',
       html_url: 'https://koda.com',
       language: 'JavaScript',
+    },
+    {
+      id: '6',
+      name: 'Repo 6',
+      desc: 'desc 6',
+      html_url: 'https://koda.com',
+      language: 'Ruby',
     },
   ];
 
@@ -63,7 +76,7 @@ const RepositoriesPage = () => {
         <Filter languages={languages} />
       </Sidebar>
       <Main>
-        <Repositories />
+        <Repositories repositories={repositories} />
       </Main>
     </Container>
   );
