@@ -52,7 +52,7 @@ export const Cleaner = styled.button`
   color: ${(props) => props.theme.colors.text};
   border: none;
   text-align: left;
-  padding: 1rem;
+  padding: 0.3rem 1rem;
 
   &:hover {
     color: rgba(255, 255, 255, 0.5);
